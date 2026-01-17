@@ -1,0 +1,13 @@
+{
+    "name": "planet-signus",
+    "version": "0.0.0",
+    "title": "Planet Signus",
+    "author": "ErrorTheCommie, Davinir Silverwing",
+    "factorio_version":"2.0",
+    "dependencies": [
+        "base >= 2.0",
+        "space-age >= 2.0",
+        "PlanetsLib >= 1.0.0"
+    ],
+    "description":"The testing verson of the Planet Signus (temporary name) mod."
+}
