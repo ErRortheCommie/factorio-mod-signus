@@ -40,7 +40,7 @@ data:extend({
     {
     type = "technology",
     name = "zirc-baking",
-    icon = "__planet-signus__/graphics/technology/ring-star.png",
+    icon = "__planet-signus__/graphics/technology/zirc_research.png",
     icon_size = 256,
     essential = true,
     effects =
@@ -76,6 +76,7 @@ data:extend({
       count = 10
     }
   },
+
 
 
 
