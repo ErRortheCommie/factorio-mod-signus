@@ -37,7 +37,7 @@ data:extend({
         icon_size = 64,
         subgroup = "zirc-item",
         stack_size = 100,
-        weight = 5 * kg, -- 200/rocket
+        weight = 20 * kg, -- 50/rocket
     },   
 
     {
@@ -47,7 +47,7 @@ data:extend({
         icon_size = 64,
         subgroup = "zirc-item",
         stack_size = 100,
-        weight = 5 * kg, -- 200/rocket
+        weight = 20 * kg, -- 50/rocket
     },   
 
     {
@@ -57,7 +57,7 @@ data:extend({
         icon_size = 64,
         subgroup = "zirc-item",
         stack_size = 100,
-        weight = 5 * kg, -- 200/rocket
+        weight = 10 * kg, -- 100/rocket
     },       
 
     {
@@ -67,10 +67,28 @@ data:extend({
         icon_size = 64,
         subgroup = "zirc-item",
         stack_size = 100,
-        weight = 5 * kg, -- 200/rocket
+        weight = 10 * kg, -- 100/rocket
     },    
     
-    
+    {
+        type = "item",
+        name = "zirc_pipe_unbaked",
+        icon = "__planet-signus__/graphics/items/zirc_pipe.png",
+        icon_size = 64,
+        subgroup = "zirc-item",
+        stack_size = 100,
+        weight = 2.5 * kg, -- 400/rocket
+    },    
+
+    {
+        type = "item",
+        name = "zirc_pipe_baked",
+        icon = "__planet-signus__/graphics/items/zirc_pipe_baked.png",
+        icon_size = 64,
+        subgroup = "zirc-item",
+        stack_size = 100,
+        weight = 2.5 * kg, -- 400/rocket
+    },    
 
     -- ORES/RAW STUFF
       {

@@ -55,6 +55,10 @@ data:extend({
       },
       {
         type = "unlock-recipe",
+        recipe = "zirc_pipe_unbaked",
+      },      
+      {
+        type = "unlock-recipe",
         recipe = "kiln-zirc-ingot",
       },
       {
@@ -65,7 +69,10 @@ data:extend({
         type = "unlock-recipe",
         recipe = "kiln-zirc-cogwheel",
       },
-
+      {
+        type = "unlock-recipe",
+        recipe = "kiln-zirc-pipe",
+      },
       
     },
     prerequisites = {"planet-discovery-signus"},
@@ -76,7 +83,6 @@ data:extend({
       count = 10
     }
   },
-
 
 
 

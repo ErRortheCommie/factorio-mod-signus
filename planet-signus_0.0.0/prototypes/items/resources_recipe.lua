@@ -34,6 +34,18 @@ data:extend({
     results = {{type="item", name="zirc_casing_unbaked", amount=1}}
   },  
 
+     {
+    type = "recipe",
+    name = "zirc_pipe_unbaked",
+    enabled = false,
+    ingredients =
+    {
+      {type = "item", name = "zirc_ingot_unbaked", amount = 1},
+    },
+    energy_required = 0.5,
+    results = {{type="item", name="zirc_pipe_unbaked", amount=2}}
+  },  
+
   -- smelting
   {
     type = "recipe",
@@ -68,6 +80,17 @@ data:extend({
     allow_productivity = true
   },   
 
+  {
+    type = "recipe",
+    name = "zirc_pipe_baked",
+    category = "smelting",
+    auto_recycle = false,
+    energy_required = 5,
+    ingredients = {{type = "item", name = "zirc_pipe_unbaked", amount = 1}},
+    results = {{type="item", name="zirc_pipe_baked", amount=1}},
+    allow_productivity = true
+  },   
+
   -- foundry-ing
 
     {
@@ -76,7 +99,7 @@ data:extend({
     category = "metallurgy",
     subgroup = "zirc-recipe",
     order = "a",
-    icon = "__planet-signus__/graphics/items/zirc_ingot_baked.png",
+    icon = "__planet-signus__/graphics/items/zirc_ingot_baked.png", -- temporary icon until Zirconium Kilning icons are added
     enabled = false,
     ingredients =
     {
@@ -94,7 +117,7 @@ data:extend({
     category = "metallurgy",
     subgroup = "zirc-recipe",
     order = "b",
-    icon = "__planet-signus__/graphics/items/zirc_casing_baked.png",
+    icon = "__planet-signus__/graphics/items/zirc_casing_baked.png", -- temporary icon until Zirconium Kilning icons are added
     enabled = false,
     ingredients =
     {
@@ -112,7 +135,7 @@ data:extend({
     category = "metallurgy",
     subgroup = "zirc-recipe",
     order = "a",
-    icon = "__planet-signus__/graphics/items/zirc_cogwheel_baked.png",
+    icon = "__planet-signus__/graphics/items/zirc_cogwheel_baked.png", -- temporary icon until Zirconium Kilning icons are added
     enabled = false,
     ingredients =
     {
@@ -123,16 +146,34 @@ data:extend({
     results = {{type = "item", name = "zirc_cogwheel_baked", amount = 5}},
     allow_productivity = true
   },  
+
+    {
+    type = "recipe",
+    name = "kiln-zirc-pipe",
+    category = "metallurgy",
+    subgroup = "zirc-recipe",
+    order = "a",
+    icon = "__planet-signus__/graphics/items/zirc_pipe_baked.png", -- temporary icon until Zirconium Kilning icons are added
+    enabled = false,
+    ingredients =
+    {
+      {type = "item", name = "zirc_pipe_unbaked", amount = 5},
+    },
+    energy_required = 10,
+    allow_decomposition = false,
+    results = {{type = "item", name = "zirc_pipe_baked", amount = 5}},
+    allow_productivity = true
+  },  
   --recycling
   {
     type = "recipe",
     name = "zirc-scrap-recycling",
     icons = {
       {
-        icon = "__quality__/graphics/icons/recycling.png",
+        icon = "__planet-signus__/graphics/items/zirc_ingot.png", -- temporary icon until final Zirconium Scrap icon is added.
       },
       {
-        icon = "__planet-signus__/graphics/items/zirc_ingot.png", -- temporary icon until final Zirconium Scrap icon is added.
+        icon = "__quality__/graphics/icons/recycling.png",
       }
     },
     category = "recycling-or-hand-crafting",
@@ -156,7 +197,13 @@ data:extend({
         amount = 1,
         show_details_in_recipe_tooltip = false,
       }, -- set to 0.1 prob.
-      --{type = "item", name = "zirc_ingot_unbaked", probability = 0.5, show_details_in_recipe_tooltip = false}, ##### replace zirconium ingots with pipes in this one
+      {
+        type = "item",
+        name = "zirc_pipe_unbaked",
+        probability = 0.5,
+        amount = 1,
+        show_details_in_recipe_tooltip = false
+      }, -- set to 0.25 prob
       {
         type = "item",
         name = "zirc_cogwheel_unbaked",
