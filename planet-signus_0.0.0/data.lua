@@ -2,7 +2,7 @@
 require("__planet-signus__.prototypes.planet.signus_star_system")
 require("__planet-signus__.prototypes.planet.signus_ring.signus_planet")
 require("__planet-signus__.prototypes.planet.signus_space_routes")
-
+require("__planet-signus__.prototypes.planet.asteroid_routing")
 --items
 require("__planet-signus__.prototypes.items.resources")
 

@@ -1,4 +1,4 @@
-local asteroid_util = require("__space-age__.prototypes.planet.asteroid-spawn-definitions")
+local asteroid_util = require("__planet-signus__.prototypes.planet.asteroid_routing")
 
 data:extend({
     -- Fulgora/Signus
@@ -16,9 +16,10 @@ data:extend({
         type = "space-connection",
         name = "aquilo-signus-connection",
         subgroup = "planet-connections",
-        from = "aquilo",
-        to = "signus_planet",
+        from = "signus_planet",
+        to = "aquilo",
         length = 40000,
         order = "h",
-    }
+        --asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.signus_aquilo)
+    },
 })
