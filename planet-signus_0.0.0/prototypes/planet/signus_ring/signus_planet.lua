@@ -13,7 +13,7 @@ PlanetsLib:extend({
                 type = "space-location",
                 name = "signus_background_star",
             },
-            distance = 13,
+            distance = 11,
             orientation = 0.1,
             sprite = {
                 type = "sprite",
